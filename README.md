@@ -11,3 +11,19 @@
 1) Multi-step based user registration
 2) Easy navigation to previous and next steps
 3) Attractive UI design
+
+# TECHNOLOGIES USED 📌
+
+
+
+
+
+
+
+
+
+
+
+
+
+

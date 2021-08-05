@@ -6,6 +6,8 @@
 
 - This is a Multistep based User Registration Form where you can signup as a new user with multiple steps side by side as sliders.
 
+🌐 
+
 ## 🔭 Features :
 
 1) Multi-step based user registration

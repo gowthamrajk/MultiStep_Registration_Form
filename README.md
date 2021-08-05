@@ -6,7 +6,7 @@
 
 - This is a Multistep based User Registration Form where you can signup as a new user with multiple steps side by side as sliders.
 
-🌐 Demo : 
+🌐 Demo : https://gowthamrajk.github.io/MultiStep_Registration_Form/
 
 ## 🔭 Features :
 

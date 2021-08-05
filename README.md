@@ -8,4 +8,4 @@
 
 ## 🔭 Features :
 
-1) 
+1) Multi-step based user registration

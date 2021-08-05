@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Cairo:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: visible;
+  background: rgb(2,37,27);
+  background: linear-gradient(90deg, rgba(2,37,27,1) 0%, rgba(9,121,93,1) 40%, rgba(20,185,144,1) 74%, rgba(0,255,204,1) 100%);
+}
+::selection{
+  color: black;
+  background: lightblue;
+}
+.container{
+  width: 330px;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 4px 4px 25px 4px #022522;
+  padding: 20px 45px 0px 45px;
+}
+.container header{
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Aladin', cursive;
+  letter-spacing: 2px;
+  color: maroon;
+  margin: 0 0 10px 0;
+}
+.container .form-outer{
+  width: 100%;
+  margin-top: -0%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  font-size: 25px;
+  font-family: 'Aladin', cursive;
+  letter-spacing: 2px;
+  color: darkred;
+  font-weight: bold;
+}
+.form-outer form .page .field{
+  width: 330px;
+  height: 45px;
+  margin: 40px 0;
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -30px;
+  font-family: 'Cairo', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+form .page .field input{
+  height: 80%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-size: 15px;
+}
+form .page .field input:focus, form .page .field select:focus
+{
+  border: 2px solid #ede966;
+}
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+form .page .field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #196b61;
+  margin-top: -20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 1s ease;
+}
+form .page .field button:hover{
+  background: #0a302c;
+}
+form .page .btns button{
+  margin-top: -15px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+  font-weight: bold;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+  font-weight: bold;
+}
+.container .progress-bar{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  user-select: none;
+}
+.container .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.container .progress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar .step .bullet.active{
+  border-color: green;
+  background: green;
+}
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -51px;
+  height: 3px;
+  width: 44px;
+  background: #262626;
+}
+.progress-bar .step .bullet.active:after{
+  background: green;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: #d43f8d;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}

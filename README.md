@@ -74,7 +74,7 @@
 
 ## Copyright-and-license 📌
 
-Code and documentation Copyright 2021 : **Gowthamraj K**
+**Code and documentation Copyright 2021 : Gowthamraj K**
 
 [website1]: https://gowthamrajk.github.io
 [hackerrank]: https://www.hackerrank.com/gowthamraj692
